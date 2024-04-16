@@ -43,6 +43,20 @@
             if(email.length >= 8 && password.length >= 2){
                 window.location.assign("home.html");
                 alert("Login Successfull!");
+
+                //passing user and account objects:
+aptrinsic("identify",
+  {
+  //User Fields
+    "id": email, // Required for logged in app users
+    "email": email,
+  },
+  {
+  //Account Fields
+    "id":"IBM", //Required
+    "name":"International Business Machine",
+    "Program": "Platinum" // flat custom attributes
+ });
             }
             else{
                 alert("Invalid Information");
