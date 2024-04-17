@@ -67,8 +67,7 @@ input{
 
 .btn-field{
     width: 150px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     background: #000000;
     border-radius: 50px;
 }
