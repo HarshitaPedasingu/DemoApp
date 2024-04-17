@@ -67,10 +67,12 @@ input{
 }
 
 .btn-field{
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: center;
     background: #000000;
+    border-radius: 20px;
+    color: #fff;
 }
 
 .btn-field button{
