@@ -74,6 +74,11 @@ input{
     border-radius: 70px;
 }
 
+.waste input:hover{
+    background: #999;
+    color: #eaeaea;
+}
+
 /* .btn-field button{
     flex-basis: 48%;
     background: #000000;
