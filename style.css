@@ -76,7 +76,7 @@ input{
     cursor: pointer;
 }
 
-.btn-field button{
+/* .btn-field button{
     flex-basis: 48%;
     background: #000000;
     color: #fff;
@@ -91,4 +91,4 @@ input{
 .btn-field button:hover{
     background: #999;
     color: #eaeaea;
-}
+} */
