@@ -74,7 +74,7 @@ input{
     border-radius: 70px;
 }
 
-.waste input:hover{
+.waste:hover{
     background: #999;
     color: #eaeaea;
 }
