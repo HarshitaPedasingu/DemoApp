@@ -66,7 +66,6 @@ input{
 }
 
 .btn-field{
-    width: 100%;
     display: flex;
     justify-content: center;
     background: #000000;
