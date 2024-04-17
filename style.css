@@ -66,15 +66,7 @@ input{
     color: #999;
 }
 
-.btn-field{
-    display-flex;
-    justify-content: center;
-    width: 200px;
-    background: #000000;
-    color: #fff;
-    border: 1px solid #000000;
-    cursor: pointer;
-}   
+
 
 /* .btn-field{
     width: 100%;
