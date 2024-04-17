@@ -67,24 +67,35 @@ input{
 }
 
 .btn-field{
+    display-flex;
+    justify-content: center;
+    width: 200px;
+    background: #000000;
+    color: #fff;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+    
+
+/* .btn-field{
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.btn-field {
+.btn-field button{
     flex-basis: 48%;
     background: #000000;
     color: #fff;
     height: 40px;
     border-radius: 20px;
-    border: 1px solid balck;
+    border: 0;
     outline: 0;
     cursor: pointer;
     transition: background .5s;
 }
 
-.btn-field:hover{
+.btn-field button:hover{
     background: #999;
     color: #eaeaea;
-}
+} */
