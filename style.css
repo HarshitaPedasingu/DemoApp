@@ -72,19 +72,19 @@ input{
     justify-content: center;
 }
 
-.btn-field button{
+.btn-field {
     flex-basis: 48%;
     background: #000000;
     color: #fff;
     height: 40px;
     border-radius: 20px;
-    border: 0;
+    border: 1px solid balck;
     outline: 0;
     cursor: pointer;
     transition: background .5s;
 }
 
-.btn-field button:hover{
+.btn-field:hover{
     background: #999;
     color: #eaeaea;
 }
