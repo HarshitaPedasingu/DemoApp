@@ -7,41 +7,42 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/6b7a877ee5.js" crossorigin="anonymous"></script>
     <!-- Gainsight PX Tag-->
-  <script type="text/javascript">
-  (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
-      (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
-    var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
-    var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
-  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-PU1DIJNZMO02-2");
-</script>
-<!-- Gainsight PX Tag-->
+      <script type="text/javascript">
+          (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
+          (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
+            var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
+            var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
+          })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-PU1DIJNZMO02-2");
+    </script>
+    <!-- Gainsight PX Tag-->
 </head>
 <body>
     <div class="container">
-        <!--SIGN IN-->
+        <!-- SIGN IN -->
         <div class="form-box">
             <h1>User Login</h1>
             <form class="loginForm" action="home.html" name="form" onsubmit="return func()">
                 <div class="input-group">
-                    <!--Email-->
+                    <!-- Email -->
                     <div class="input-field">
                         <i class="fa-solid fa-user"></i>
                         <input type="text" placeholder="Email" name="email" id="email">
                     </div>
-                    <!--Password-->
+                    <!-- Password -->
                     <div class="input-field">
                         <i class="fa-solid fa-lock"></i>
                         <input type="password" placeholder="Password" name="password" id="pass">
                     </div>
                     <input type="submit" value="Sign In"> 
                 </div>
-                <!--Login button-->
-               <!--<div class="btn-field">
-                   <button type="submit" id="signinBtn" onclick="func();" location.href="home.html">Sign in</button>
-                </div>-->
+                <!-- Login button -->
+                <!-- <div class="btn-field">
+                       <button type="submit" id="signinBtn" onclick="func();" location.href="home.html">Sign in</button>
+                     </div> 
+                -->
             </form>
         </div>
-        <!--END-->
+        <!-- END -->
     </div>
 
     <script>
@@ -53,28 +54,28 @@
             if(email.length >= 8 && password.length >= 2){
                 //window.location.assign("home.html");
                 //window.location.href="https://harshitapedasingu.github.io/DemoApp/home.html";
-//passing user and account objects:
-                aptrinsic("identify",
-  {
-  //User Fields
-    "id": email, // Required for logged in app users
-    "email": email,
-  },
-  {
-  //Account Fields
-    "id":"IBM", //Required
-    "name":"International Business Machine",
-    "Program": "Platinum" // flat custom attributes
- });
-                alert("Login Successfull!");
 
+                // PX IDENTIFY CODE
+                //passing user and account objects:
+                aptrinsic("identify",
+                  {
+                  //User Fields
+                    "id": email, // Required for logged in app users
+                    "email": email,
+                  },
+                  {
+                  //Account Fields
+                    "id":"IBM", //Required
+                    "name":"International Business Machine",
+                    "Program": "Platinum" // flat custom attributes
+                 });
                 
-            }
-            else{
-                alert("Invalid Information");
+                    alert("Login Successfull!"); 
+                }
+                else{
+                    alert("Invalid Information");
                 return;
-            }
-            
+                }  
         }
     </script>
 
