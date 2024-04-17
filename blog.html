@@ -1,1 +1,67 @@
-Welcome to the Blog!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="blogStyle.css">
+</head>
+<body>
+    <div class="dropdown">
+        <div class="select">
+            <span class="selected">Not sure which spot? Refer to these amazing blogs!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <div class="caret"></div>
+        </div>
+        <ul class="menu">
+            <li>Sameer's Blog</li>
+            <li>Mountains or Beaches?</li>
+            <li>Trip to Manali</li>
+            <li class="active">Trekking Stories</li>
+            <li>Devotional Radhika</li>
+        </ul>
+    </div>
+
+    <script>
+        //get all dropdowns from the document
+        const dropdowns = document.querySelectorAll('.dropdown');
+        
+        //loop through all dropdown elements
+        dropdowns.forEach(dropdown => {
+
+            const select = dropdown.querySelector('.select');
+            const caret = dropdown.querySelector('.caret');
+            const menu = dropdown.querySelector('.menu');
+            const options = dropdown.querySelector('.menu li');
+            const selected = dropdown.querySelector('.selected');
+
+            //add a click event to the select element
+            select.addEventListener('click',() => {
+
+                //add the clicked select styles to the select element
+                select.classList.toggle('select-clicked');
+
+                //add the rotate style to the caret element
+                caret.classList.toggle('caret-rotate');
+
+                //add open styles to menu element
+                menu.classList.toggle('menu-open');
+            });
+
+            options.forEach(option => {
+                option.addEventListener('click', () => {
+                    selected.innerText = option.innerText;
+                    select.classList.remove('select-clicked');
+                    caret.classList.remove('caret-rotate');
+                    menu.classList.remove('menu-open');
+                    options.forEach(option => {
+                        option.classList.remove('active');
+                    });
+                    option.classList.add('active');
+                });
+            });
+        });
+
+        dropdowns
+    </script>
+</body>
+</html>
